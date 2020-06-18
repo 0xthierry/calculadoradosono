@@ -1,16 +1,12 @@
 import React from 'react';
-import Head from 'next/head';
+import PrincipalSection from '../components/PrincipalSection';
+import Header from '../components/Header';
 
 const Home: React.FC = () => {
   return (
     <>
-      <Head>
-        <title>Initial Structure</title>
-      </Head>
-      <section>
-        <p>[Your Self Introduction]</p>
-      </section>
-      <img src="/images/profile.jpg" alt="" />
+      <Header />
+      <PrincipalSection />
     </>
   );
 };

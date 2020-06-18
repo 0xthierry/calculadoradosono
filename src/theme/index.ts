@@ -4,11 +4,16 @@ export default {
   spacing: (size: ISize = 1) => `${0.4 * size}rem`,
   container: {
     min: '32rem',
-    max: '130rem',
+    max: '120rem',
   },
   colors: {
-    primary: '',
-    secondary: '',
+    primary: {
+      main: '#111B47',
+      light: '#E7ECFF',
+    },
+    secondary: {
+      main: '#505F98',
+    },
     white: '#FFF',
     black: '#000',
   },
