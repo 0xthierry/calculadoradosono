@@ -74,9 +74,15 @@ const PrincipalSection: React.FC = () => {
               Quando preciso ir dormir
             </Button>
           </S.CalculateContainerButton>
-          {cycles.map(cycle => (
-            <p key={cycle.time}>{new Date(cycle.time).toLocaleTimeString()}</p>
-          ))}
+          <S.CardGroupContainer>
+            <S.CardContainer>
+              <div>
+                <strong>12:15 AM</strong>
+                <strong>Sugerido</strong>
+              </div>
+              <p>7.5 hrs of sleep, 5 sleep cycles</p>
+            </S.CardContainer>
+          </S.CardGroupContainer>
         </S.RightContent>
       </S.Container>
     </Wrapper>

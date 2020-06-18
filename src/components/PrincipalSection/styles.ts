@@ -54,6 +54,40 @@ export const CalculateContainerButton = styled.div`
   }
 `;
 
+export const CardGroupContainer = styled.div`
+  background: #f4f4f4;
+  padding: ${({ theme }) => theme.spacing(4)};
+  border-radius: 4px;
+
+  display: grid;
+
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 2rem;
+  grid-row-gap: 2rem;
+`;
+
+export const CardContainer = styled.div`
+  padding: ${({ theme }) => theme.spacing(4)};
+  display: flex;
+  flex-direction: column;
+  background: ${({ theme }) => theme.colors.white};
+  border-radius: 4px;
+  height: 100%;
+
+  div {
+    display: flex;
+    justify-content: space-between;
+    > strong {
+      color: ${({ theme }) => theme.colors.primary.main};
+    }
+  }
+
+  p {
+    margin-top: ${({ theme }) => theme.spacing(2)};
+  }
+`;
+
 export const Container = styled.div`
   display: grid;
   grid-template-columns: repeat(2, minmax(250px, 1fr));
