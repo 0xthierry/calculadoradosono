@@ -1,5 +1,8 @@
+/* eslint-disable react/jsx-one-expression-per-line */
+/* eslint-disable prettier/prettier */
 import React, { useState } from 'react';
 import Select from 'react-select';
+import { format } from 'date-fns';
 import Wrapper from '../Wrapper';
 import Button from '../Button';
 import * as S from './styles';
@@ -71,18 +74,22 @@ const PrincipalSection: React.FC = () => {
           </S.SelectContainer>
           <S.CalculateContainerButton>
             <Button type="button" variant="filled" onClick={handleCalculate}>
-              Quando preciso ir dormir
+              Preciso ir dormir às
             </Button>
           </S.CalculateContainerButton>
+          {cycles.length > 0 && (
           <S.CardGroupContainer>
-            <S.CardContainer>
-              <div>
-                <strong>12:15 AM</strong>
-                <strong>Sugerido</strong>
-              </div>
-              <p>7.5 hrs of sleep, 5 sleep cycles</p>
-            </S.CardContainer>
+            {cycles.map(({ cycle, hours, suggested, time }) => (
+              <S.CardContainer>
+                <div>
+                  <strong>{format(time, 'hh:mm a')}</strong>
+                  {suggested &&<strong>Sugerido</strong>}
+                </div>
+                <p>{hours} horas de sono, {cycle} {cycle > 1 ? 'ciclos' : 'ciclo'} de sono</p>
+              </S.CardContainer>
+            ))}
           </S.CardGroupContainer>
+)}
         </S.RightContent>
       </S.Container>
     </Wrapper>

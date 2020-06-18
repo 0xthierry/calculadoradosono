@@ -3,7 +3,6 @@ import media from 'styled-media-query';
 
 export const LeftContent = styled.div`
   display: flex;
-  justify-content: center;
   flex-direction: column;
 
   h2 {
@@ -68,23 +67,32 @@ export const CardGroupContainer = styled.div`
 `;
 
 export const CardContainer = styled.div`
-  padding: ${({ theme }) => theme.spacing(4)};
   display: flex;
   flex-direction: column;
-  background: ${({ theme }) => theme.colors.white};
   border-radius: 4px;
   height: 100%;
+  cursor: pointer;
+
+  background: ${({ theme }) => theme.colors.white};
+  padding: ${({ theme }) => theme.spacing(4)};
 
   div {
     display: flex;
     justify-content: space-between;
     > strong {
       color: ${({ theme }) => theme.colors.primary.main};
+      font-size: 1.6rem;
     }
   }
 
   p {
     margin-top: ${({ theme }) => theme.spacing(2)};
+    font-size: 1.4rem;
+  }
+
+  &:hover {
+    transform: translateX(5px);
+    transition: all 0.2s ease 0s;
   }
 `;
 
