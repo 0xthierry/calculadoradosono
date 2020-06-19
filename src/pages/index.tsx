@@ -1,12 +1,15 @@
 import React from 'react';
 import PrincipalSection from '../components/PrincipalSection';
 import Header from '../components/Header';
+import Wave from '../components/Wave';
 
 const Home: React.FC = () => {
   return (
     <>
-      <Header />
-      <PrincipalSection />
+      <Wave>
+        <Header />
+        <PrincipalSection />
+      </Wave>
     </>
   );
 };

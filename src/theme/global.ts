@@ -46,4 +46,8 @@ export default createGlobalStyle`
   ::-webkit-scrollbar-track {
       background: hsla(0,0%,100%,.1);
   }
+
+  #__next, body {
+    height: 100%;
+  }
 `;

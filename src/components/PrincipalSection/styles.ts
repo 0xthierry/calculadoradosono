@@ -1,29 +1,7 @@
 import styled from 'styled-components';
 import media from 'styled-media-query';
 
-export const LeftContent = styled.div`
-  display: flex;
-  flex-direction: column;
-
-  h2 {
-    color: ${({ theme }) => theme.colors.primary.main};
-    font-size: 3.5rem;
-  }
-
-  p {
-    color: ${({ theme }) => theme.colors.secondary.main};
-    padding: ${({ theme }) => theme.spacing(8)} 0px;
-    font-size: 1.8rem;
-  }
-
-  button {
-    text-transform: 'uppercase';
-  }
-`;
-
-export const RightContent = styled.div`
-  padding: 0px ${({ theme }) => theme.spacing(8)};
-
+export const Content = styled.div`
   h2 {
     color: ${({ theme }) => theme.colors.primary.main};
     font-size: 3.5rem;
@@ -38,8 +16,14 @@ export const RightContent = styled.div`
 
 export const SelectContainer = styled.div`
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(3, 20rem);
   grid-column-gap: ${({ theme }) => theme.spacing(4)};
+
+  ${media.lessThan('small')`
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-row: repeat(3, 1fr);
+    grid-row-gap: ${({ theme }) => theme.spacing(4)};
+  `}
 `;
 
 export const CalculateContainerButton = styled.div`
@@ -51,19 +35,29 @@ export const CalculateContainerButton = styled.div`
   button {
     width: 80%;
   }
+
+  ${media.lessThan('small')`
+    button {
+      width:100%;
+    }
+  `}
 `;
 
 export const CardGroupContainer = styled.div`
-  background: #f4f4f4;
-  padding: ${({ theme }) => theme.spacing(4)};
   border-radius: 4px;
 
   display: grid;
 
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, 1fr);
-  grid-column-gap: 2rem;
-  grid-row-gap: 2rem;
+  grid-column-gap: ${({ theme }) => theme.spacing(4)};
+  grid-row-gap: ${({ theme }) => theme.spacing(4)};
+
+  ${media.lessThan('small')`
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-row: repeat(4, 1fr);
+    grid-row-gap: ${({ theme }) => theme.spacing(4)};
+  `}
 `;
 
 export const CardContainer = styled.div`
@@ -72,6 +66,7 @@ export const CardContainer = styled.div`
   border-radius: 4px;
   height: 100%;
   cursor: pointer;
+  box-shadow: 0 0 20px -4px #c2cfd6;
 
   background: ${({ theme }) => theme.colors.white};
   padding: ${({ theme }) => theme.spacing(4)};
@@ -97,17 +92,7 @@ export const CardContainer = styled.div`
 `;
 
 export const Container = styled.div`
-  display: grid;
-  grid-template-columns: repeat(2, minmax(250px, 1fr));
-  ${media.lessThan('medium')`
-    grid-template-columns: repeat(1, 1fr);
-    grid-row-gap: ${({ theme }) => theme.spacing(4)};
-    grid-template-rows: repeat(2, 1fr);
-  `}
-
-  ${media.between('small', 'medium')`
-    ${LeftContent} {
-      display: none;
-    }
-  `}
+  display: flex;
+  align-items: center;
+  justify-content: center;
 `;

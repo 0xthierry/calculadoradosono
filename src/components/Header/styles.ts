@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import media from 'styled-media-query';
 
 export const Container = styled.div`
   display: flex;
@@ -13,4 +14,11 @@ export const Container = styled.div`
   button {
     text-transform: 'uppercase';
   }
+
+  ${media.lessThan('small')`
+    justify-content: center;
+    button {
+      display: none;
+    }
+  `}
 `;
