@@ -2,6 +2,11 @@ import styled from 'styled-components';
 import media from 'styled-media-query';
 
 export const Content = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: 'center';
+  width: 100%;
+
   h2 {
     color: ${({ theme }) => theme.colors.primary.main};
     font-size: 3.5rem;
@@ -18,34 +23,31 @@ export const SelectContainer = styled.div`
   display: grid;
   grid-template-columns: repeat(3, 20rem);
   grid-column-gap: ${({ theme }) => theme.spacing(4)};
+  align-self: center;
 
-  ${media.lessThan('small')`
+  ${media.lessThan('medium')`
     grid-template-columns: repeat(1, 1fr);
-    grid-template-row: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
     grid-row-gap: ${({ theme }) => theme.spacing(4)};
+    width: 100%;
   `}
 `;
 
 export const CalculateContainerButton = styled.div`
-  padding: ${({ theme }) => theme.spacing(8)} 0px;
+  padding: ${({ theme }) => theme.spacing(8)} 0px 0px;
   display: flex;
   align-items: center;
   justify-content: center;
 
   button {
-    width: 80%;
+    width: 100%;
+    max-width: 40rem;
   }
-
-  ${media.lessThan('small')`
-    button {
-      width:100%;
-    }
-  `}
 `;
 
 export const CardGroupContainer = styled.div`
   border-radius: 4px;
-
+  padding: ${({ theme }) => theme.spacing(8)} 0px 0px;
   display: grid;
 
   grid-template-columns: repeat(2, 1fr);
@@ -56,7 +58,6 @@ export const CardGroupContainer = styled.div`
   ${media.lessThan('small')`
     grid-template-columns: repeat(1, 1fr);
     grid-template-row: repeat(4, 1fr);
-    grid-row-gap: ${({ theme }) => theme.spacing(4)};
   `}
 `;
 

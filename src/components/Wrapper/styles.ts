@@ -7,5 +7,5 @@ export const Container = styled.div`
 
   margin: 0 auto;
 
-  padding: ${({ theme }) => theme.spacing(8)} 0px;
+  padding: ${({ theme }) => theme.spacing(8)} ${({ theme }) => theme.spacing(4)};
 `;

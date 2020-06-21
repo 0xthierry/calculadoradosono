@@ -15,7 +15,7 @@ export const Container = styled.div`
     text-transform: 'uppercase';
   }
 
-  ${media.lessThan('small')`
+  ${media.lessThan('medium')`
     justify-content: center;
     button {
       display: none;
