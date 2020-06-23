@@ -1,5 +1,7 @@
 import React from 'react';
 import Head from 'next/head';
+import Router from 'next/router';
+import withGA from 'next-ga';
 import { AppProps } from 'next/app';
 import { ThemeProvider } from 'styled-components';
 import GlobalStyles from '../theme/global';
@@ -23,4 +25,4 @@ const App: React.FC<AppProps> = ({ Component, pageProps }) => {
   );
 };
 
-export default App;
+export default withGA(process.env.GA, Router)(App);
