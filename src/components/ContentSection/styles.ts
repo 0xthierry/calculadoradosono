@@ -27,7 +27,7 @@ export const ImageContainer = styled.div`
   align-items: center;
 
   img {
-    max-height: 35rem;
+    max-height: 30rem;
     height: 100%;
     border-radius: 50%;
   }

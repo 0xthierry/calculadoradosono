@@ -6,9 +6,20 @@ export const Container = styled.div`
   justify-content: space-between;
   align-items: center;
 
-  h1 {
-    color: ${({ theme }) => theme.colors.primary.main};
-    font-size: 3rem;
+  div {
+    display: flex;
+    align-items: center;
+
+    svg {
+      font-size: 30px;
+      color: ${({ theme }) => theme.colors.primary.main};
+    }
+
+    h1 {
+      color: ${({ theme }) => theme.colors.primary.main};
+      font-size: 3rem;
+      margin-left: 1rem;
+    }
   }
 
   button {
