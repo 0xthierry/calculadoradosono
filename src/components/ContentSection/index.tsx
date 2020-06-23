@@ -17,31 +17,16 @@ export interface IProps {
 const ContentSection: React.FC<IProps> = ({ content, img, invert }) => {
   return (
     <Wrapper>
-      <S.Container>
-        {!invert ? (
-          <S.Content>
-            <h2>{content.title}</h2>
-            {content.description.map(text => (
-              <p key="text">{text}</p>
-            ))}
-          </S.Content>
-        ) : (
-          <S.ImageContainer invert={invert}>
-            <img src={img.src} alt={img.alt} />
-          </S.ImageContainer>
-        )}
-        {invert ? (
-          <S.Content>
-            <h2>{content.title}</h2>
-            {content.description.map(text => (
-              <p key="text">{text}</p>
-            ))}
-          </S.Content>
-        ) : (
-          <S.ImageContainer invert={invert}>
-            <img src={img.src} alt={img.alt} />
-          </S.ImageContainer>
-        )}
+      <S.Container invert={invert}>
+        <S.Content>
+          <h2>{content.title}</h2>
+          {content.description.map(text => (
+            <p key="text">{text}</p>
+          ))}
+        </S.Content>
+        <S.ImageContainer>
+          <img src={img.src} alt={img.alt} />
+        </S.ImageContainer>
       </S.Container>
     </Wrapper>
   );
