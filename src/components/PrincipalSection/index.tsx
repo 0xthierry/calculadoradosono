@@ -43,6 +43,7 @@ const PrincipalSection: React.FC = () => {
               onChange={e => setState(prev => ({ ...prev, hour: e }))}
               options={HOURS}
               placeholder="Hora"
+              isSearchable={false}
             />
             <Select
               value={state.minute}
@@ -50,6 +51,7 @@ const PrincipalSection: React.FC = () => {
               onChange={e => setState(prev => ({ ...prev, minute: e }))}
               options={MINUTES}
               placeholder="Minutos"
+              isSearchable={false}
             />
             <Select
               value={state.period}
@@ -57,6 +59,7 @@ const PrincipalSection: React.FC = () => {
               onChange={e => setState(prev => ({ ...prev, period: e }))}
               options={PERIODS}
               placeholder="AM"
+              isSearchable={false}
             />
           </S.SelectContainer>
           <S.CalculateContainerButton>
