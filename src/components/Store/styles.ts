@@ -45,5 +45,6 @@ export const ItemContainer = styled.div`
 
   p {
     font-size: 1.4rem;
+    margin-top: ${({ theme }) => theme.spacing(4)};
   }
 `;

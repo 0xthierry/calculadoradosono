@@ -16,6 +16,7 @@ const App: React.FC<AppProps> = ({ Component, pageProps }) => {
           rel="stylesheet"
         />
         <title>Calculadora do sono</title>
+        <meta name="theme-color" content="#111B47" />
         <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
         <meta
           name="viewport"
@@ -23,8 +24,22 @@ const App: React.FC<AppProps> = ({ Component, pageProps }) => {
         />
         <meta name="description" content="Description" />
         <meta name="keywords" content="Keywords" />
+
         <link rel="manifest" href="/manifest.json" />
-        <meta name="theme-color" content="#111B47" />
+        <link
+          href="/favicon-16x16.png"
+          rel="icon"
+          type="image/png"
+          sizes="16x16"
+        />
+        <link
+          href="/favicon-32x32.png"
+          rel="icon"
+          type="image/png"
+          sizes="32x32"
+        />
+        <link rel="apple-touch-icon" href="/apple-icon.png" />
+        <link rel="shortcut icon" href="/favicon.ico" />
       </Head>
       <ThemeProvider theme={theme}>
         <Component {...pageProps} />
