@@ -17,6 +17,12 @@ export const Content = styled.div`
   button {
     height: 4rem;
   }
+
+  ${media.lessThan('medium')`
+    h2 {
+      font-size: 2.5rem;
+    }
+  `}
 `;
 
 export const SelectContainer = styled.div`

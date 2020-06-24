@@ -31,5 +31,11 @@ export const Container = styled.div`
     button {
       display: none;
     }
+
+    div {
+      h1 {
+        font-size: 2.5rem;
+      }
+    }
   `}
 `;

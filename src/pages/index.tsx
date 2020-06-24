@@ -4,6 +4,7 @@ import Header from '../components/Header';
 import Wave from '../components/Wave';
 import Ad from '../components/Ad';
 import ContentSection from '../components/ContentSection';
+import Store from '../components/Store';
 
 const Home: React.FC = () => {
   return (
@@ -48,6 +49,40 @@ const Home: React.FC = () => {
             src: '/images/profile.jpg',
             alt: 'Pessoa pensando sobre a importancia do ciclo de sono',
           }}
+        />
+        <Store
+          items={[
+            {
+              src:
+                'https://images-na.ssl-images-amazon.com/images/I/71nqxsBVjYL._AC_SX569_.jpg',
+              alt:
+                'Fibrasca Nasa - Travesseiro Visco, Branco, 50 X 70 Cm, Enchimento 100% Poliuretano',
+              description:
+                'Fibrasca Nasa - Travesseiro Visco, Branco, 50 X 70 Cm, Enchimento 100% Poliuretano',
+              link:
+                'https://www.amazon.com.br/Travesseiro-Fronhas-Fibrasca-Revestimento-Poli%C3%A9ster/dp/B07C53DCT8/',
+            },
+            {
+              src:
+                'https://images-na.ssl-images-amazon.com/images/I/71nqxsBVjYL._AC_SX569_.jpg',
+              alt:
+                'Fibrasca Nasa - Travesseiro Visco, Branco, 50 X 70 Cm, Enchimento 100% Poliuretano',
+              description:
+                'Fibrasca Nasa - Travesseiro Visco, Branco, 50 X 70 Cm, Enchimento 100% Poliuretano',
+              link:
+                'https://www.amazon.com.br/Travesseiro-Fronhas-Fibrasca-Revestimento-Poli%C3%A9ster/dp/B07C53DCT8/',
+            },
+            {
+              src:
+                'https://images-na.ssl-images-amazon.com/images/I/71nqxsBVjYL._AC_SX569_.jpg',
+              alt:
+                'Fibrasca Nasa - Travesseiro Visco, Branco, 50 X 70 Cm, Enchimento 100% Poliuretano',
+              description:
+                'Fibrasca Nasa - Travesseiro Visco, Branco, 50 X 70 Cm, Enchimento 100% Poliuretano',
+              link:
+                'https://www.amazon.com.br/Travesseiro-Fronhas-Fibrasca-Revestimento-Poli%C3%A9ster/dp/B07C53DCT8/',
+            },
+          ]}
         />
       </Wave>
     </>

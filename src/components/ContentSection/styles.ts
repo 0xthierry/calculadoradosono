@@ -19,6 +19,12 @@ export const Content = styled.div`
     color: ${({ theme }) => theme.colors.secondary.main};
     font-size: 1.6rem;
   }
+
+  ${media.lessThan('medium')`
+    h2 {
+      font-size: 2rem;
+    }
+  `}
 `;
 
 export const ImageContainer = styled.div`
