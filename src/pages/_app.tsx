@@ -16,6 +16,15 @@ const App: React.FC<AppProps> = ({ Component, pageProps }) => {
           rel="stylesheet"
         />
         <title>Calculadora do sono</title>
+        <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
+        <meta
+          name="viewport"
+          content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no"
+        />
+        <meta name="description" content="Description" />
+        <meta name="keywords" content="Keywords" />
+        <link rel="manifest" href="/manifest.json" />
+        <meta name="theme-color" content="#111B47" />
       </Head>
       <ThemeProvider theme={theme}>
         <Component {...pageProps} />

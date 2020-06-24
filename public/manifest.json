@@ -1,0 +1,9 @@
+{
+  "name": "Calculadora do sono",
+  "short_name": "Calculadora do sono",
+  "theme_color": "#111b47",
+  "background_color": "#e7ecff",
+  "display": "fullscreen",
+  "scope": "/",
+  "start_url": "/"
+}
