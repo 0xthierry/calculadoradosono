@@ -15,9 +15,9 @@ const Home: React.FC = () => {
         <Ad />
         <ContentSection
           content={{
-            title: 'A importancia do ciclo de sono',
+            title: 'O que são ciclos de sono?',
             description: [
-              'Vivamus rhoncus turpis sit amet justo pellentesque tincidunt. In placerat dapibus rhoncus. Vivamus a nisl vulputate, pellentesque mi et, pharetra erat. Vivamus at sodales justo. Maecenas egestas mollis ligula, sit amet tempor tortor luctus quis. Suspendisse a neque ac mi elementum pharetra. Fusce tincidunt eu nisl eu varius.',
+              'Durante o sono, passamos por alguns estágios e cada estágio está associado a diferentes ondas cerebrais. Quando conseguimos atravessar todos os estágios com sucesso, alcançamos um ciclo de sono que normalmente ocorre em 90 minutos',
             ],
           }}
           img={{
@@ -27,28 +27,14 @@ const Home: React.FC = () => {
         />
         <ContentSection
           content={{
-            title: 'A importancia do ciclo de sono',
-            description: [
-              'Vivamus rhoncus turpis sit amet justo pellentesque tincidunt. In placerat dapibus rhoncus. Vivamus a nisl vulputate, pellentesque mi et, pharetra erat. Vivamus at sodales justo. Maecenas egestas mollis ligula, sit amet tempor tortor luctus quis. Suspendisse a neque ac mi elementum pharetra. Fusce tincidunt eu nisl eu varius.',
-            ],
+            title: 'A importância dos ciclos de sono na produtividade',
+            description: [''],
           }}
           img={{
             src: '/images/profile.jpg',
-            alt: 'Pessoa pensando sobre a importancia do ciclo de sono',
+            alt: 'A importância dos ciclos de sono na produtividade',
           }}
           invert
-        />
-        <ContentSection
-          content={{
-            title: 'A importancia do ciclo de sono',
-            description: [
-              'Vivamus rhoncus turpis sit amet justo pellentesque tincidunt. In placerat dapibus rhoncus. Vivamus a nisl vulputate, pellentesque mi et, pharetra erat. Vivamus at sodales justo. Maecenas egestas mollis ligula, sit amet tempor tortor luctus quis. Suspendisse a neque ac mi elementum pharetra. Fusce tincidunt eu nisl eu varius.',
-            ],
-          }}
-          img={{
-            src: '/images/profile.jpg',
-            alt: 'Pessoa pensando sobre a importancia do ciclo de sono',
-          }}
         />
         <Store
           items={[
