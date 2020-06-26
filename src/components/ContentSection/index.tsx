@@ -10,6 +10,10 @@ export interface IProps {
   img: {
     alt: string;
     src: string;
+    attribuition?: {
+      text: string;
+      url: string;
+    };
   };
   invert?: boolean;
 }
@@ -26,6 +30,11 @@ const ContentSection: React.FC<IProps> = ({ content, img, invert }) => {
         </S.Content>
         <S.ImageContainer>
           <img src={img.src} alt={img.alt} />
+          {img?.attribuition && (
+            <a href={img.attribuition.url} target="__blank">
+              {img.attribuition.text}
+            </a>
+          )}
         </S.ImageContainer>
       </S.Container>
     </Wrapper>

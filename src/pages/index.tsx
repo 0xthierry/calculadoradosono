@@ -17,24 +17,17 @@ const Home: React.FC = () => {
           content={{
             title: 'O que são ciclos de sono?',
             description: [
-              'Durante o sono, passamos por alguns estágios e cada estágio está associado a diferentes ondas cerebrais. Quando conseguimos atravessar todos os estágios com sucesso, alcançamos um ciclo de sono que normalmente ocorre em 90 minutos',
+              'Durante o sono, passamos por alguns estágios e cada estágio está associado a diferentes ondas cerebrais. Quando conseguimos atravessar todos os estágios com sucesso, alcançamos um ciclo de sono que normalmente ocorre em 90 minutos, utilizamos essa métrica para calcular o horário ideal para você dormir.',
             ],
           }}
           img={{
-            src: '/images/profile.jpg',
-            alt: 'Pessoa pensando sobre a importancia do ciclo de sono',
+            src: '/images/2310324.jpg',
+            alt: 'O que são ciclos de sono',
+            attribuition: {
+              text: 'Home vector created by freepik',
+              url: 'https://www.freepik.com/free-photos-vectors/home',
+            },
           }}
-        />
-        <ContentSection
-          content={{
-            title: 'A importância dos ciclos de sono na produtividade',
-            description: [''],
-          }}
-          img={{
-            src: '/images/profile.jpg',
-            alt: 'A importância dos ciclos de sono na produtividade',
-          }}
-          invert
         />
         <Store
           items={[

@@ -29,13 +29,19 @@ export const Content = styled.div`
 
 export const ImageContainer = styled.div`
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 
   img {
-    max-height: 30rem;
+    max-height: 28rem;
     height: 100%;
     border-radius: 50%;
+  }
+
+  a {
+    font-size: 1.2rem;
+    margin-top: ${({ theme }) => theme.spacing(2)};
   }
 
   ${media.lessThan('medium')`
@@ -55,6 +61,6 @@ export const Container = styled.div<Pick<IProps, 'invert'>>`
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(2, 1fr);
 
-    grid-row-gap: ${({ theme }) => theme.spacing(4)};
+    grid-row-gap: ${({ theme }) => theme.spacing(2)};
   `}
 `;
