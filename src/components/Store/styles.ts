@@ -21,6 +21,7 @@ export const Container = styled.div`
 export const ItemsContainer = styled.div`
   display: flex;
   overflow-x: auto;
+  align-items: baseline;
 
   a {
     text-decoration: none;
@@ -41,6 +42,7 @@ export const ItemContainer = styled.div`
 
   img {
     max-width: 25rem;
+    max-height: 14rem;
   }
 
   p {

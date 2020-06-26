@@ -25,18 +25,12 @@ export const Content = styled.div`
   `}
 `;
 
-export const SelectContainer = styled.div`
-  display: grid;
-  grid-template-columns: repeat(3, 20rem);
-  grid-column-gap: ${({ theme }) => theme.spacing(4)};
-  align-self: center;
+export const TimerContainer = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
-  ${media.lessThan('medium')`
-    grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-    grid-row-gap: ${({ theme }) => theme.spacing(4)};
-    width: 100%;
-  `}
+  --top-selected-color: ${({ theme }) => theme.colors.primary.main};
 `;
 
 export const CalculateContainerButton = styled.div`

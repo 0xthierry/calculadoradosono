@@ -12,7 +12,7 @@ const Home: React.FC = () => {
       <Wave>
         <Header />
         <PrincipalSection />
-        <Ad />
+        {/* <Ad /> */}
         <ContentSection
           content={{
             title: 'O que são ciclos de sono?',
@@ -43,23 +43,20 @@ const Home: React.FC = () => {
             },
             {
               src:
-                'https://images-na.ssl-images-amazon.com/images/I/71nqxsBVjYL._AC_SX569_.jpg',
-              alt:
-                'Fibrasca Nasa - Travesseiro Visco, Branco, 50 X 70 Cm, Enchimento 100% Poliuretano',
-              description:
-                'Fibrasca Nasa - Travesseiro Visco, Branco, 50 X 70 Cm, Enchimento 100% Poliuretano',
+                'https://images-na.ssl-images-amazon.com/images/I/61n7oXEhMUL._AC_SX679_.jpg',
+              alt: 'Protetor de Olhos Blackout, Curtlo, Unissex, Preto',
+              description: 'Protetor de Olhos Blackout, Curtlo, Unissex, Preto',
               link:
-                'https://www.amazon.com.br/Travesseiro-Fronhas-Fibrasca-Revestimento-Poli%C3%A9ster/dp/B07C53DCT8/',
+                'https://www.amazon.com.br/Protetor-Olhos-Blackout-Curtlo-Unissex/dp/B07T8NFQMG',
             },
             {
               src:
-                'https://images-na.ssl-images-amazon.com/images/I/71nqxsBVjYL._AC_SX569_.jpg',
-              alt:
-                'Fibrasca Nasa - Travesseiro Visco, Branco, 50 X 70 Cm, Enchimento 100% Poliuretano',
+                'https://images-na.ssl-images-amazon.com/images/I/41gOdaJX5cL._SX293_BO1,204,203,200_.jpg',
+              alt: 'Por que Nós Dormimos. A Nova Ciência do Sono e do Sonho',
               description:
-                'Fibrasca Nasa - Travesseiro Visco, Branco, 50 X 70 Cm, Enchimento 100% Poliuretano',
+                'Por que Nós Dormimos. A Nova Ciência do Sono e do Sonho',
               link:
-                'https://www.amazon.com.br/Travesseiro-Fronhas-Fibrasca-Revestimento-Poli%C3%A9ster/dp/B07C53DCT8/',
+                'https://www.amazon.com.br/Por-que-n%C3%B3s-dormimos-ci%C3%AAncia/dp/8551003658',
             },
           ]}
         />

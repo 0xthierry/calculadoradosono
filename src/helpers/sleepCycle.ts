@@ -39,7 +39,7 @@ export default function sleepCycle({
       suggested: false,
     },
   ];
-
+  console.log(cycles);
   return cycles.map(({ cycle, suggested }) => {
     const time = new Date(date.getTime() - NINETY_MINUTES * cycle).getTime();
     return {
