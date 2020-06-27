@@ -17,6 +17,10 @@ const App: React.FC<AppProps> = ({ Component, pageProps }) => {
           rel="stylesheet"
         />
         <title>O melhor horário para dormir - Calculadora do sono</title>
+        <meta
+          name="google-site-verification"
+          content="Y8rEsYqusKR6yP2GDl1DOZErK_ffdPeFDX9vuwcfByQ"
+        />
         <meta name="theme-color" content="#111B47" />
         <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
         <meta
