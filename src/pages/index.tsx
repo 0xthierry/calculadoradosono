@@ -2,7 +2,7 @@ import React from 'react';
 import PrincipalSection from '../components/PrincipalSection';
 import Header from '../components/Header';
 import Wave from '../components/Wave';
-import Ad from '../components/Ad';
+// import Ad from '../components/Ad';
 import ContentSection from '../components/ContentSection';
 import Store from '../components/Store';
 
@@ -38,16 +38,14 @@ const Home: React.FC = () => {
                 'Fibrasca Nasa - Travesseiro Visco, Branco, 50 X 70 Cm, Enchimento 100% Poliuretano',
               description:
                 'Fibrasca Nasa - Travesseiro Visco, Branco, 50 X 70 Cm, Enchimento 100% Poliuretano',
-              link:
-                'https://www.amazon.com.br/Travesseiro-Fronhas-Fibrasca-Revestimento-Poli%C3%A9ster/dp/B07C53DCT8/',
+              link: 'https://amzn.to/3i6tVnC',
             },
             {
               src:
                 'https://images-na.ssl-images-amazon.com/images/I/61n7oXEhMUL._AC_SX679_.jpg',
               alt: 'Protetor de Olhos Blackout, Curtlo, Unissex, Preto',
               description: 'Protetor de Olhos Blackout, Curtlo, Unissex, Preto',
-              link:
-                'https://www.amazon.com.br/Protetor-Olhos-Blackout-Curtlo-Unissex/dp/B07T8NFQMG',
+              link: 'https://amzn.to/2NEvzOZ',
             },
             {
               src:
@@ -55,8 +53,7 @@ const Home: React.FC = () => {
               alt: 'Por que Nós Dormimos. A Nova Ciência do Sono e do Sonho',
               description:
                 'Por que Nós Dormimos. A Nova Ciência do Sono e do Sonho',
-              link:
-                'https://www.amazon.com.br/Por-que-n%C3%B3s-dormimos-ci%C3%AAncia/dp/8551003658',
+              link: 'https://amzn.to/3i5Kvnt',
             },
           ]}
         />
