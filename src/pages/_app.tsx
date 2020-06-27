@@ -15,16 +15,31 @@ const App: React.FC<AppProps> = ({ Component, pageProps }) => {
           href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap"
           rel="stylesheet"
         />
-        <title>Calculadora do sono</title>
+        <title>O melhor horário para dormir - Calculadora do sono</title>
         <meta name="theme-color" content="#111B47" />
         <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
         <meta
           name="viewport"
           content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no"
         />
-        <meta name="description" content="Description" />
-        <meta name="keywords" content="Keywords" />
-
+        <meta property="og:site_name" content="Calculadora do sono" />
+        <meta
+          property="og:title"
+          content=" melhor horário para dormir - Calculadora do sono"
+        />
+        <meta
+          property="og:description"
+          content="Encontre o melhor o horário para dormir com a calculadora do sono, com ela você encontrará o melhor horário para dormir, acordar bem e ter um dia produtivo."
+        />
+        <meta property="og:type" content="website" />
+        <meta
+          property="description"
+          content="Encontre o melhor o horário para dormir com a calculadora do sono, com ela você encontrará o melhor horário para dormir, acordar bem e ter um dia produtivo."
+        />
+        <meta
+          name="keywords"
+          content="o melhor horário para dormir, calculadora do sono, calculadora do sono online, calculadora de ciclo de sono, dormir bem, como encontrar o melhor horário para dormir, como acordar bem, como dormir no horário certo"
+        />
         <link rel="manifest" href="/manifest.json" />
         <link
           href="/favicon-16x16.png"
