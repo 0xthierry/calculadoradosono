@@ -12,10 +12,6 @@ const App: React.FC<AppProps> = ({ Component, pageProps }) => {
   return (
     <>
       <Head>
-        <link
-          href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap"
-          rel="stylesheet"
-        />
         <title>O melhor horário para dormir - Calculadora do sono</title>
         <meta
           name="google-site-verification"
@@ -57,6 +53,15 @@ const App: React.FC<AppProps> = ({ Component, pageProps }) => {
         />
         <link rel="apple-touch-icon" href="/apple-icon.png" />
         <link rel="shortcut icon" href="/favicon.ico" />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap"
+          rel="stylesheet"
+        />
+        <script
+          data-ad-client="ca-pub-8011413517971026"
+          async
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"
+        />
       </Head>
       <ThemeProvider theme={theme}>
         <Component {...pageProps} />
