@@ -1,3 +1,4 @@
+/* eslint-disable react/jsx-no-comment-textnodes */
 import React from 'react';
 import Head from 'next/head';
 import Router from 'next/router';
@@ -33,7 +34,7 @@ const App: React.FC<AppProps> = ({ Component, pageProps }) => {
         />
         <meta property="og:type" content="website" />
         <meta
-          property="description"
+          name="description"
           content="Encontre o melhor o horário para dormir com a calculadora do sono, com ela você encontrará o melhor horário para dormir, acordar bem e ter um dia produtivo."
         />
         <meta
