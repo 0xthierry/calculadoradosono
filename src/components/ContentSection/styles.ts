@@ -20,6 +20,10 @@ export const Content = styled.div`
     font-size: 1.6rem;
   }
 
+  p + p {
+    margin-top: ${({ theme }) => theme.spacing(1)};
+  }
+
   ${media.lessThan('medium')`
     h2 {
       font-size: 2rem;
