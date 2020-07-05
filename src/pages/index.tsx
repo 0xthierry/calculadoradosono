@@ -3,8 +3,8 @@ import PrincipalSection from '../components/PrincipalSection';
 import Header from '../components/Header';
 import Wave from '../components/Wave';
 // import Ad from '../components/Ad';
-import ContentSection from '../components/ContentSection';
-import Store from '../components/Store';
+// import ContentSection from '../components/ContentSection';
+// import Store from '../components/Store';
 
 const Home: React.FC = () => {
   return (
@@ -12,7 +12,7 @@ const Home: React.FC = () => {
       <Wave>
         <Header />
         <PrincipalSection />
-        <ContentSection
+        {/* <ContentSection
           content={{
             title: 'Calculadora do sono',
             description: [
@@ -28,8 +28,8 @@ const Home: React.FC = () => {
               url: 'https://www.freepik.com/free-photos-vectors/home',
             },
           }}
-        />
-        <Store
+        /> */}
+        {/* <Store
           items={[
             {
               src:
@@ -56,7 +56,7 @@ const Home: React.FC = () => {
               link: 'https://amzn.to/3i5Kvnt',
             },
           ]}
-        />
+        /> */}
       </Wave>
     </>
   );
