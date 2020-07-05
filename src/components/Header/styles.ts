@@ -5,6 +5,7 @@ export const Container = styled.nav`
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: relative;
 
   div {
     display: flex;
@@ -70,8 +71,6 @@ export const Container = styled.nav`
     opacity: 1;
     z-index: 1000;
   }
-
-  overflow-y: hidden;
 `;
 
 export const LabelContainer = styled.label`
@@ -87,7 +86,6 @@ export const LabelContainer = styled.label`
     0 0 0 0 ${({ theme }) => theme.colors.primary.main};
   transition: box-shadow 1.1s cubic-bezier(0.19, 1, 0.22, 1);
   z-index: 1000;
-  overflow-y: hidden;
 
   :hover {
     box-shadow: 0 0 0 8px ${({ theme }) => theme.colors.primary.main},
@@ -126,15 +124,15 @@ export const LabelContainer = styled.label`
 `;
 
 export const LinksContainer = styled.ul`
-  z-index: -5;
   list-style: none;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
   opacity: 0;
   transition: 0.25s 0.1s cubic-bezier(0, 1.07, 0, 1.02);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
   height: 100vh;
+
   a {
     text-decoration: none;
     color: ${({ theme }) => theme.colors.primary.main};
@@ -147,5 +145,14 @@ export const LinksContainer = styled.ul`
     :hover {
       opacity: 0.7;
     }
+  }
+
+  div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    height: 100%;
   }
 `;

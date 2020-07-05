@@ -25,7 +25,7 @@ const Policy: React.FC = () => {
             `Cookies são pequenos arquivos de texto colocados em sua máquina para
             ajudar o website a prover uma melhor experiência do usuário. Em geral,
             cookies armazenam preferências do usuário, armazenam informação de coisas
-            como carrinhos de compras e provêem dados do usuári anonimamente à
+            como carrinhos de compras e provêem dados do usuário anonimamente à
             aplicações de terceiros como o Google Analytics. Por via de regra, cookies
             melhoram a experiência de navegação. No entanto, você pode preferir
             desabilitar os cookies desse website ou de outros. A maneira mais eficaz
@@ -37,15 +37,14 @@ const Policy: React.FC = () => {
             serviços e instalam cookies e/ou web beacons (por exemplo, os cookies que
             são empregados para prover serviços de publicidade ou certos conteúdos
             através dos quais o usuário visualiza a publicidade ou conteúdos em tempo
-            pré determinados). O usuário poderá pesquisar o disco rígido de seu
-            computador conforme instruções do próprio navegador.`,
+            pré determinados).`,
             `Usuário tem a possibilidade de configurar seu navegador para ser avisado,
             na tela do computador, sobre a recepção dos cookies e para impedir a sua
             instalação no disco rígido. As informações pertinentes a esta configuração
             estão disponíveis em instruções e manuais do próprio navegador.`,
             `Usamos empresas de publicidade de terceiros para veicular anúncios durante
             a sua visita ao calculadoradosono.com. Essas empresas podem usar
-            informações (que não incluem o seu nome, endereço, endereço de e-mail ou
+            informações (que não incluem o seu nome, endereço de e-mail ou
             número de telefone) sobre suas visitas a este e a outros websites a fim de
             exibir anúncios relacionados a produtos e serviços de seu interesse.`,
           ],
@@ -55,7 +54,7 @@ const Policy: React.FC = () => {
         content={{
           title: 'Mais informações sobre dados pessoais',
           description: [
-            `Nós não vendemos ou alugamos dados dos usuários a terceiros para qualquer propósito. Os únicos usos de dados estão mencionados nessa política. O usuário é dono de seus dados e pode optar por não compartilhá-los desabilitando os cookies de seu navegador ou pelos links mencionados de desativação de Analytics e anúncios.`,
+            `Nós não vendemos ou alugamos dados dos usuários a terceiros para qualquer propósito. Os únicos usos de dados estão mencionados nessa política. O usuário é dono de seus dados e pode optar por não compartilhá-los desabilitando os cookies de seu navegador.`,
           ],
         }}
       />
@@ -63,7 +62,7 @@ const Policy: React.FC = () => {
         content={{
           title: 'Alterações',
           description: [
-            `Poderemos atualizar esta política de privacidade e termos de tempos em tempos, portanto você deverá verificá-la periodicamente`,
+            `Poderemos atualizar esta política de privacidade e termos de uso de tempos em tempos, portanto você deverá verificá-la periodicamente`,
           ],
         }}
       />
@@ -71,7 +70,7 @@ const Policy: React.FC = () => {
         content={{
           title: 'Informação de contato',
           description: [
-            `Dono e controlador de dados: Thierry Santos`,
+            `Dono e desenvolvedor: Thierry Santos`,
             `Email de contato: thierrysantoos123@gmail.com`,
           ],
         }}

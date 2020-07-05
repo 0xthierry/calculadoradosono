@@ -9,7 +9,6 @@ import * as S from './styles';
 
 const Header: React.FC = () => {
   const [value, setValue] = React.useState(false);
-
   React.useEffect(() => {
     if (value === true) {
       animateScroll.scrollToTop();
@@ -38,26 +37,28 @@ const Header: React.FC = () => {
           <span />
         </S.LabelContainer>
         <S.LinksContainer>
-          <li>
-            <Link href="/">
-              <a>Home</a>
-            </Link>
-          </li>
-          <li>
-            <Link href="/sobre">
-              <a>Sobre</a>
-            </Link>
-          </li>
-          <li>
-            <Link href="/duvidas">
-              <a>Dúvidas</a>
-            </Link>
-          </li>
-          <li>
-            <Link href="/politicas">
-              <a>Políticas e Termos de Uso</a>
-            </Link>
-          </li>
+          <div>
+            <li>
+              <Link href="/">
+                <a>Home</a>
+              </Link>
+            </li>
+            <li>
+              <Link href="/sobre">
+                <a>Sobre</a>
+              </Link>
+            </li>
+            <li>
+              <Link href="/duvidas">
+                <a>Dúvidas</a>
+              </Link>
+            </li>
+            <li>
+              <Link href="/politicas">
+                <a>Políticas e Termos de Uso</a>
+              </Link>
+            </li>
+          </div>
         </S.LinksContainer>
       </S.Container>
     </Wrapper>

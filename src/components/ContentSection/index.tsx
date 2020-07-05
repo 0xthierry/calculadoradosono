@@ -25,7 +25,7 @@ const ContentSection: React.FC<IProps> = ({ content, img, invert }) => {
         <S.Content>
           <h2>{content.title}</h2>
           {content.description.map(text => (
-            <p key="text">{text}</p>
+            <p key={text}>{text}</p>
           ))}
         </S.Content>
         {img && (
