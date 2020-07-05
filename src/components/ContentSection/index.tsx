@@ -16,13 +16,23 @@ export interface IProps {
     };
   };
   invert?: boolean;
+  fullWidth?: boolean;
+  titleAlign?: 'left' | 'right' | 'center';
+  titleSize?: 's' | 'm' | 'g';
 }
 
-const ContentSection: React.FC<IProps> = ({ content, img, invert }) => {
+const ContentSection: React.FC<IProps> = ({
+  content,
+  img,
+  invert,
+  fullWidth,
+  titleAlign,
+  titleSize,
+}) => {
   return (
     <Wrapper>
-      <S.Container invert={invert}>
-        <S.Content>
+      <S.Container invert={invert} fullWidth={fullWidth}>
+        <S.Content titleAlign={titleAlign} titleSize={titleSize}>
           <h2>{content.title}</h2>
           {content.description.map(text => (
             <p key={text}>{text}</p>

@@ -69,7 +69,7 @@ export const Container = styled.nav`
 
   input:checked ~ ul {
     opacity: 1;
-    z-index: 1000;
+    z-index: 5;
   }
 `;
 
@@ -85,7 +85,7 @@ export const LabelContainer = styled.label`
   box-shadow: 0 0 0 0 ${({ theme }) => theme.colors.primary.main},
     0 0 0 0 ${({ theme }) => theme.colors.primary.main};
   transition: box-shadow 1.1s cubic-bezier(0.19, 1, 0.22, 1);
-  z-index: 1000;
+  z-index: 5;
 
   :hover {
     box-shadow: 0 0 0 8px ${({ theme }) => theme.colors.primary.main},
@@ -132,6 +132,7 @@ export const LinksContainer = styled.ul`
   left: 0;
   width: 100%;
   height: 100vh;
+  z-index: -5;
 
   a {
     text-decoration: none;

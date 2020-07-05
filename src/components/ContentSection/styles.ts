@@ -3,15 +3,24 @@ import media from 'styled-media-query';
 
 import { IProps } from '.';
 
-export const Content = styled.div`
+const titleSizeValues = {
+  s: '2.2rem',
+  m: '2.4rem',
+  g: '2.6rem',
+};
+
+export const Content = styled.div<
+  Pick<IProps, 'titleAlign'> & Pick<IProps, 'titleSize'>
+>`
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
 
   h2 {
     color: ${({ theme }) => theme.colors.primary.main};
-    font-size: 2.4rem;
+    font-size: ${({ titleSize }) => titleSizeValues[titleSize] || '2.4rem'};
     margin-bottom: ${({ theme }) => theme.spacing(4)};
+    text-align: ${({ titleAlign }) => titleAlign || 'left'};
   }
 
   p {
@@ -55,10 +64,13 @@ export const ImageContainer = styled.div`
   `}
 `;
 
-export const Container = styled.div<Pick<IProps, 'invert'>>`
+export const Container = styled.div<
+  Pick<IProps, 'invert'> & Pick<IProps, 'fullWidth'>
+>`
   display: grid;
 
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: ${({ fullWidth }) =>
+    fullWidth ? '1fr' : 'repeat(2, 1fr)'};
   grid-column-gap: ${({ theme }) => theme.spacing(4)};
 
   ${media.lessThan('medium')`

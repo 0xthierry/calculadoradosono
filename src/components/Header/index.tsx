@@ -49,11 +49,6 @@ const Header: React.FC = () => {
               </Link>
             </li>
             <li>
-              <Link href="/duvidas">
-                <a>Dúvidas</a>
-              </Link>
-            </li>
-            <li>
               <Link href="/politicas">
                 <a>Políticas e Termos de Uso</a>
               </Link>
