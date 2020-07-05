@@ -1,11 +1,12 @@
 import React from 'react';
 
 // import { Container } from './styles';
+
 /**
- * Question about sleeping
+ * About terms of use
  */
-const Questions: React.FC = () => {
+const TermsOfUse: React.FC = () => {
   return <div />;
 };
 
-export default Questions;
+export default TermsOfUse;

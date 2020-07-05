@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import media from 'styled-media-query';
 
-export const Content = styled.div`
+export const Content = styled.main`
   display: flex;
   flex-direction: column;
   justify-content: 'center';

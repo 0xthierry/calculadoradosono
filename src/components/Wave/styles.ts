@@ -11,7 +11,7 @@ const drift = keyframes`
 
 export const Container = styled.div`
   width: 100%;
-  height: 700px;
+  height: 100%;
   border-radius: 5px;
   position: relative;
   overflow: hidden;
