@@ -7,7 +7,7 @@ export interface IProps {
     title: string;
     description: string[];
   };
-  img: {
+  img?: {
     alt: string;
     src: string;
     attribuition?: {
@@ -28,14 +28,16 @@ const ContentSection: React.FC<IProps> = ({ content, img, invert }) => {
             <p key="text">{text}</p>
           ))}
         </S.Content>
-        <S.ImageContainer>
-          <img src={img.src} alt={img.alt} />
-          {img?.attribuition && (
-            <a href={img.attribuition.url} target="__blank">
-              {img.attribuition.text}
-            </a>
-          )}
-        </S.ImageContainer>
+        {img && (
+          <S.ImageContainer>
+            <img src={img.src} alt={img.alt} />
+            {img?.attribuition && (
+              <a href={img.attribuition.url} target="__blank">
+                {img.attribuition.text}
+              </a>
+            )}
+          </S.ImageContainer>
+        )}
       </S.Container>
     </Wrapper>
   );

@@ -1,7 +1,7 @@
 import React from 'react';
 import PrincipalSection from '../components/PrincipalSection';
-import Header from '../components/Header';
 import Wave from '../components/Wave';
+import DefaultLayout from '../components/DefaultLayout';
 // import Ad from '../components/Ad';
 // import ContentSection from '../components/ContentSection';
 // import Store from '../components/Store';
@@ -10,8 +10,9 @@ const Home: React.FC = () => {
   return (
     <>
       <Wave>
-        <Header />
-        <PrincipalSection />
+        <DefaultLayout>
+          <PrincipalSection />
+        </DefaultLayout>
         {/* <ContentSection
           content={{
             title: 'Calculadora do sono',
@@ -28,34 +29,6 @@ const Home: React.FC = () => {
               url: 'https://www.freepik.com/free-photos-vectors/home',
             },
           }}
-        /> */}
-        {/* <Store
-          items={[
-            {
-              src:
-                'https://images-na.ssl-images-amazon.com/images/I/71nqxsBVjYL._AC_SX569_.jpg',
-              alt:
-                'Fibrasca Nasa - Travesseiro Visco, Branco, 50 X 70 Cm, Enchimento 100% Poliuretano',
-              description:
-                'Fibrasca Nasa - Travesseiro Visco, Branco, 50 X 70 Cm, Enchimento 100% Poliuretano',
-              link: 'https://amzn.to/3i6tVnC',
-            },
-            {
-              src:
-                'https://images-na.ssl-images-amazon.com/images/I/61n7oXEhMUL._AC_SX679_.jpg',
-              alt: 'Protetor de Olhos Blackout, Curtlo, Unissex, Preto',
-              description: 'Protetor de Olhos Blackout, Curtlo, Unissex, Preto',
-              link: 'https://amzn.to/2NEvzOZ',
-            },
-            {
-              src:
-                'https://images-na.ssl-images-amazon.com/images/I/41gOdaJX5cL._SX293_BO1,204,203,200_.jpg',
-              alt: 'Por que Nós Dormimos. A Nova Ciência do Sono e do Sonho',
-              description:
-                'Por que Nós Dormimos. A Nova Ciência do Sono e do Sonho',
-              link: 'https://amzn.to/3i5Kvnt',
-            },
-          ]}
         /> */}
       </Wave>
     </>

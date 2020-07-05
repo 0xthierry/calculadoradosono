@@ -22,6 +22,11 @@ export const Container = styled.nav`
     }
   }
 
+  a {
+    text-decoration: none;
+    cursor: pointer;
+  }
+
   button {
     text-transform: 'uppercase';
   }
@@ -65,6 +70,8 @@ export const Container = styled.nav`
     opacity: 1;
     z-index: 1000;
   }
+
+  overflow-y: hidden;
 `;
 
 export const LabelContainer = styled.label`
@@ -80,6 +87,7 @@ export const LabelContainer = styled.label`
     0 0 0 0 ${({ theme }) => theme.colors.primary.main};
   transition: box-shadow 1.1s cubic-bezier(0.19, 1, 0.22, 1);
   z-index: 1000;
+  overflow-y: hidden;
 
   :hover {
     box-shadow: 0 0 0 8px ${({ theme }) => theme.colors.primary.main},

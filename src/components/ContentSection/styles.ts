@@ -21,7 +21,7 @@ export const Content = styled.div`
   }
 
   p + p {
-    margin-top: ${({ theme }) => theme.spacing(1)};
+    margin-top: ${({ theme }) => theme.spacing(3)};
   }
 
   ${media.lessThan('medium')`
