@@ -134,7 +134,7 @@ export const LinksContainer = styled.ul`
   transform: translate(-50%, -50%);
   opacity: 0;
   transition: 0.25s 0.1s cubic-bezier(0, 1.07, 0, 1.02);
-
+  height: 100vh;
   a {
     text-decoration: none;
     color: ${({ theme }) => theme.colors.primary.main};
