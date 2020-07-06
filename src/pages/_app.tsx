@@ -12,7 +12,6 @@ const App: React.FC<AppProps> = ({ Component, pageProps }) => {
   return (
     <>
       <Head>
-        <title>O melhor horário para dormir - Calculadora do sono</title>
         <meta
           name="google-site-verification"
           content="Y8rEsYqusKR6yP2GDl1DOZErK_ffdPeFDX9vuwcfByQ"
@@ -21,22 +20,25 @@ const App: React.FC<AppProps> = ({ Component, pageProps }) => {
         <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta property="og:site_name" content="Calculadora do sono" />
+        <title>
+          Encontre o melhor horário para dormir - Calculadora do sono
+        </title>
         <meta
           property="og:title"
-          content=" melhor horário para dormir - Calculadora do sono"
+          content="Encontre o melhor horário para dormir - Calculadora do sono"
         />
         <meta
           property="og:description"
-          content="Encontre o melhor o horário para dormir com a calculadora do sono, com ela você encontrará o melhor horário para dormir, acordar bem e ter um dia produtivo."
+          content="Com a calculadora do sono você vai encontrar o melhor horário para dormir. Utilizando os ciclos do sono iremos indicar o horário ideial para você dormir e acordar bem para um dia mais produtivo."
         />
         <meta property="og:type" content="website" />
         <meta
           name="description"
-          content="Encontre o melhor o horário para dormir com a calculadora do sono, com ela você encontrará o melhor horário para dormir, acordar bem e ter um dia produtivo."
+          content="Com a calculadora do sono você vai encontrar o melhor horário para dormir. Utilizando os ciclos do sono iremos indicar o horário ideial para você dormir e acordar bem para um dia mais produtivo."
         />
         <meta
           name="keywords"
-          content="o melhor horário para dormir, calculadora do sono, calculadora do sono online, calculadora de ciclo de sono, dormir bem, como encontrar o melhor horário para dormir, como acordar bem, como dormir no horário certo"
+          content="que horas preciso ir dormir, quantas horas preciso dormir, qual o melhor horário para dormir, como dormir cedo, calculadora do sono, calculadora do sono online, quantos ciclos de sono eu preciso, quantos ciclos de sono por noite, quantos ciclos de sono devemos dormir, quantos ciclos de sono temos, quantidade de ciclos de sono"
         />
         <link rel="manifest" href="/manifest.json" />
         <link
