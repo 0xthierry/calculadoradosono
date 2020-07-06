@@ -23,6 +23,18 @@ const About: React.FC = () => {
           description: [],
         }}
       />
+      <ContentSection
+        content={{
+          title: 'Que horas dormir para acordar as?',
+          description: [],
+        }}
+      />
+      <ContentSection
+        content={{
+          title: 'Quantas horas preciso dormir?',
+          description: [],
+        }}
+      />
     </DefaultLayout>
   );
 };
