@@ -38,7 +38,7 @@ const App: React.FC<AppProps> = ({ Component, pageProps }) => {
         />
         <meta
           name="keywords"
-          content="que horas preciso ir dormir, quantas horas preciso dormir, qual o melhor horário para dormir, como dormir cedo, calculadora do sono, calculadora do sono online, quantos ciclos de sono eu preciso, quantos ciclos de sono por noite, quantos ciclos de sono devemos dormir, quantos ciclos de sono temos, quantidade de ciclos de sono"
+          content="que horas preciso ir dormir, que horas dormir para acordar as, que horas preciso ir dormir para acordar as, quantas horas preciso dormir, qual o melhor horário para dormir, como dormir cedo, calculadora do sono, calculadora do sono online, quantos ciclos de sono eu preciso, quantos ciclos de sono por noite, quantos ciclos de sono devemos dormir, quantos ciclos de sono temos, quantidade de ciclos de sono"
         />
         <link rel="manifest" href="/manifest.json" />
         <link
