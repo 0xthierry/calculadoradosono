@@ -18,7 +18,8 @@ export const Content = styled.div<
 
   h2 {
     color: ${({ theme }) => theme.colors.primary.main};
-    font-size: ${({ titleSize }) => titleSizeValues[titleSize] || '2.4rem'};
+    font-size: ${({ titleSize }) =>
+      titleSizeValues[titleSize] || titleSizeValues.m};
     margin-bottom: ${({ theme }) => theme.spacing(4)};
     text-align: ${({ titleAlign }) => titleAlign || 'left'};
   }
@@ -75,8 +76,6 @@ export const Container = styled.div<
 
   ${media.lessThan('medium')`
     grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-
     grid-row-gap: ${({ theme }) => theme.spacing(2)};
   `}
 `;

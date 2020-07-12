@@ -30,7 +30,9 @@ const Header: React.FC = () => {
         <input
           id="menu-hamburguer"
           type="checkbox"
-          onChange={e => setValue(e.target.checked)}
+          onChange={e => {
+            setValue(e.target.checked);
+          }}
           checked={value}
         />
         <S.LabelContainer htmlFor="menu-hamburguer">
@@ -44,8 +46,8 @@ const Header: React.FC = () => {
               </Link>
             </li>
             <li>
-              <Link href="/sobre">
-                <a>Sobre</a>
+              <Link href="/saiba-mais">
+                <a>Saiba mais</a>
               </Link>
             </li>
             <li>

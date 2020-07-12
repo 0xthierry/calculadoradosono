@@ -133,6 +133,7 @@ export const LinksContainer = styled.ul`
   width: 100%;
   height: 100vh;
   z-index: -5;
+  max-height: 60rem;
 
   a {
     text-decoration: none;
