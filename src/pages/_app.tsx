@@ -4,11 +4,18 @@ import Head from 'next/head';
 import Router from 'next/router';
 import withGA from 'next-ga';
 import { AppProps } from 'next/app';
+import { hotjar } from 'react-hotjar';
 import { ThemeProvider } from 'styled-components';
 import GlobalStyles from '../theme/global';
 import theme from '../theme';
 
 const App: React.FC<AppProps> = ({ Component, pageProps }) => {
+  React.useEffect(() => {
+    if (window.location.host.indexOf('localhost') === -1) {
+      hotjar.initialize(2046781, 6);
+    }
+  });
+
   return (
     <>
       <Head>
